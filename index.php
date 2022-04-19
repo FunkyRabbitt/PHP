@@ -86,6 +86,16 @@ for ($a = 1; $a<=10; $a++){
 }
 ?>
 
+<?php
+//---Nested Loop---
+for($num=1;$num<=100;){
+    for($secondNumber=$num;$secondNumber< $num+10;$secondNumber++){
+        echo $secondNumber." ";
+    }
+    echo "<br>";
+    $num = $num+10;
+}
+?>
 
 
 
