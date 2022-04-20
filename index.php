@@ -96,9 +96,58 @@ for($num=1;$num<=100;){
     $num = $num+10;
 }
 ?>
+<?php
+//---Creating function---
+function Addition($FirstNumber , $SecondNumber){
+    $Total = $FirstNumber + $SecondNumber;
+    echo "The Addition of Two number $FirstNumber and $SecondNumber is : ".$Total."<br>";
+}
+function Subtraction($FirstNumber,$SecondNumber){
+    $Total = $FirstNumber - $SecondNumber;
+    echo "The Subtraction of Two number $FirstNumber and $SecondNumber is : ".$Total."<br>";
+}function Multiplication($FirstNumber,$SecondNumber){
+    $Total = $FirstNumber * $SecondNumber;
+    echo "The ultiplication of Two number $FirstNumber and $SecondNumber is : ".$Total."<br>";
+}function Division($FirstNumber,$SecondNumber){
+    $Total = $FirstNumber / $SecondNumber;
+    echo "The Division of Two number $FirstNumber and $SecondNumber is : ".$Total."<br>";
+}
 
+$x = 42;
+$y = 23;
+Addition($x,$y);
+Subtraction($x,$y);
+Multiplication($x,$y);
+Division($x,$y);
+?>
+<?php
+//---Continue and break statement---
+for($num=1;$num<=10;$num++){
+    if($num==3){
+        continue;
+    }elseif($num==9){
+        break;
+    }else{
+        echo $num;
+    }
+}
+?>
+<?php
+//----Array---
+$name = ["Sushant khadka","Sushil Kathayat","Sabin Chaulagain"];
+for($loop=0;$loop<3;$loop++){
+    echo $name[$loop]."<br>";
+}
+?>
 
-
+<?php
+//----Multidimensional Array---
+$data = [
+    [1,"Sushant Khadka","Balkumari"],
+    [2,"Sushil Kathayat","Patan"],
+    [3,"Sabin Chaulagain","Boudha"]
+]
+?>
 
 
 
