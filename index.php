@@ -249,10 +249,58 @@
     }
     echo "</table>";
     ?>
+    <?php
+    //---Count() and sozeof() function --
+    $data = [
+        [
+            "S.N" => 1,
+            "NAME" => "Sushant Khadka",
+            "ADRESS" => "Balkumari",
+            "PHONE" => 9865758933
+        ],
+        [
+            "S.N" => 2,
+            "NAME" => "Sushil Kathayat",
+            "ADRESS" => "Patan",
+            "PHONE" => 9821644926
+        ],
+        [
+            "S.N" => 3,
+            "NAME" => "Sabin Chaulagain",
+            "ADRESS" => "Boudha", "PHONE" => 9725648914
+        ],
+        [
+            "S.N" => 4,
+            "NAME" => "Sabin Chaulagain",
+            "ADRESS" => "Boudha",
+            "PHONE" => 9725648914
+        ]
+    ];
+    echo "Total size of the Array : ";
+    echo count($data);
+    echo "<br>" . "Total Size of the element of the array : ";
+    echo sizeof($data, 1);
 
+    ?>
+    <?php
+    //---Searching the value in PhP using in_array() and Array_search()- function--
+    //----- in_search() function helps to find the element into the given array--
+    $data = [1, "Sushant Khadka", "Balkumari", 9865758933];
+    if (in_array('Sushant Khadka', $data)) {
+        echo "<br><br>Found Sucessfully";
+    } else {
+        echo "Cannot found";
+    }
 
+//-----Array_search() function helps to find the location or position of the element of the given array--
+$data = [1, "Sushant Khadka", "Balkumari", 9865758933];
+echo "<br>"."The Number of Element is : ";
+echo array_search("Sushant Khadka",$data);
+?>
 
+<?php
 
+?>
 
 
 
