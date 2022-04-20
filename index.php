@@ -332,13 +332,14 @@
     echo "Removing the last element of the given Array: <br>";
     array_shift($Data); //--Delete the First element of the Array--
     print_r($Data);
-    array_unshift($Data,"S.N"); //--added the value at First of the array---
+    array_unshift($Data, "S.N"); //--added the value at First of the array---
     print_r($Data);
     ?>
-<?php
-//---Array_merge(),Array_merge_recursion() and Array_combine() function--
-
-?>
+    <?php
+    //---Array_merge(),Array_merge_recursion() and Array_combine() function--
+    $Data = [1, "Sushant Khadka", "Balkumari", 9865758933];
+    $NewData = ["Haina Hola"]
+    ?>
 
 </body>
 
