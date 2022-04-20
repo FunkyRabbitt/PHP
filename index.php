@@ -292,19 +292,53 @@
         echo "Cannot found";
     }
 
-//-----Array_search() function helps to find the location or position of the element of the given array--
-$data = [1, "Sushant Khadka", "Balkumari", 9865758933];
-echo "<br>"."The Number of Element is : ";
-echo array_search("Sushant Khadka",$data);
-?>
+    //-----Array_search() function helps to find the location or position of the element of the given array--
+    $data = [1, "Sushant Khadka", "Balkumari", 9865758933];
+    echo "<br>" . "The Number of Element is : ";
+    echo array_search("Sushant Khadka", $data);
+    ?>
 
+    <?php
+    //---Array_replace() And Array_replace_recursion() function in php--
+    $Data = [1, "Sushant Khadka", "Balkumari", 9865758933];
+    $MoreData = ["S.N", "Sushant"];
+    $newArray = array_replace($Data, $MoreData); //--replace the first two value of $Data
+    echo "<pre>";
+    print_r($newArray);
+    echo "<pre>";
+
+    $Data = [1, "Sushant Khadka", "Balkumari", 9865758933];
+    $MoreData = ["S.N", "Sushant"];
+    $newArray = array_replace_recursive($Data, $MoreData); //--replace the first two value of $Data
+    echo "<pre>";
+    print_r($newArray);
+    echo "<pre>";
+    ?>
+
+    <?php
+    //--- Array_pop() and Array_Push() function--
+    //---Array Poping --
+    $Data = [1, "Sushant Khadka", "Balkumari", 9865758933];
+    echo "Removing the last element of the given Array: <br>";
+    array_pop($Data);
+    print_r($Data); //--Delete the last element of the Array--
+    array_push($Data, "Last One Filed Added", "Another one Element is Added"); //--added the value at last of the array---
+    print_r($Data);
+    ?>
+
+    <?php
+    //---Array_shift() and Array_Unshift() function--
+    $Data = [1, "Sushant Khadka", "Balkumari", 9865758933];
+    echo "Removing the last element of the given Array: <br>";
+    array_shift($Data); //--Delete the First element of the Array--
+    print_r($Data);
+    array_unshift($Data,"S.N"); //--added the value at First of the array---
+    print_r($Data);
+    ?>
 <?php
+//---Array_merge(),Array_merge_recursion() and Array_combine() function--
 
 ?>
-
-
-
-
 
 </body>
 
