@@ -336,11 +336,47 @@
     print_r($Data);
     ?>
     <?php
-    //---Array_merge(),Array_merge_recursion() and Array_combine() function--
+    //---Array_merge()--- helps to merge two array together--
+    // Array_merge_recursion() -- Merge the assiociation array together--
+    // Array_combine() function-- helps to merge like key value--
     $Data = [1, "Sushant Khadka", "Balkumari", 9865758933];
-    $NewData = ["Haina Hola"]
-    ?>
+    $NewData = ["Haina Hola"];
+    $newArray = array_merge($Data, $NewData);
+    echo "Printing the Array After Merging with each other";
+    print_r($newArray);
 
+    //----array combine helps to combine with the form of key value
+    $Name = ["Sushant khadka", "sushil kathayat", "Sabibn chaulagain"];
+    $Age = ["23", "56", "45"];
+    $main = array_combine($Name, $Age);
+    print_r($main);
+    ?>
+    <?php
+    //-- array slicing
+    // -- take the value and print in range-
+    $Data = [1, "Sushant Khadka", "Balkumari", 9865758933];
+    $newArray = array_slice($Data, 1, 2); //--positive range
+    $WultaValue = array_slice($Data, -2, 2);  //--negative range
+    $KhatamValue = array_slice($Data, -2, 2, true); //---printing the actual indexing pf the element of the array
+    print_r($newArray);
+    print_r($WultaValue);
+    print_r($KhatamValue);
+    ?>
+    <?php
+    $colors = ["Red", "Orange", "Pink", "Vilolet"];
+    $fruits = ["Apple", "Mango", "Papaya"];
+    echo "Replacing the value";
+    array_splice($colors,0,3,$fruits); //--Incerting the value
+    print_r($colors);
+    echo "Deleting from the range ";
+    array_splice($colors,2,1);
+    print_r($colors);
+    echo "Deleting the value of ";
+    array_splice($colors,2);
+    print_r($colors);
+
+
+    ?>
 </body>
 
 </html>
