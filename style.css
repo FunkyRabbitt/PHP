@@ -1,18 +1,28 @@
-
-table{
+*{
+    color:firebrick ;
+}
+table {
     border-radius: 20px;
     background-color: black;
     overflow: hidden;
 }
-table th{
+
+table th {
     background-color: blue;
     color: rgb(0, 0, 0);
     font-family: 'Courier New', Courier, monospace;
 }
-table tr:nth-child(even){
-background-color: rgb(7, 194, 132);
+
+table tr:nth-child(even) {
+    background-color: rgb(7, 194, 132);
 }
-table tr:nth-child(odd){
-background-color: rgb(9, 26, 121);
-color: aliceblue;
+
+table tr:nth-child(odd) {
+    background-color: rgb(9, 26, 121);
+    color: aliceblue;
+}
+
+h1{
+    color: rgb(126, 29, 29);
+    font-size: 12rem;
 }

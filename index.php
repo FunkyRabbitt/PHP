@@ -403,12 +403,27 @@
     ?>
     <?php
     //--array range function--
-    $fullArray = range(1,12);
+    $fullArray = range(1, 12);
     print_r($fullArray);
-    $fullArray = range(1,12,3);
+    $fullArray = range(1, 12, 3);
     print_r($fullArray);
     ?>
-</body>
+    <?php
+    //--uppercase to lowercase and vice versa
+    $MyName = "sushant khadka";
+    echo "<br>" . strtoupper($MyName);  //--uppercase 
+    echo "<br>" . strtolower($MyName); //--lowercase
+    echo "<br>" . ucfirst($MyName); //--first character is capital\
+    echo "<br>" . ucwords($MyName); //--every word forst letter is capital
+    ?>
+    <?php
+    //counting the word and alphabet
+    $SomeWord = "This is the first word written in php";
+    echo strlen($SomeWord); //--length of the character in the variable
+    echo "<br>" . str_word_count($SomeWord); //--count the number of word
+    echo "<br>"."<h1>".substr_count($SomeWord,"in")."</h1>"; //--counting the word
+    ?>
 
+</body>
 
 </html>
