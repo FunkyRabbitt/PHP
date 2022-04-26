@@ -366,17 +366,49 @@
     $colors = ["Red", "Orange", "Pink", "Vilolet"];
     $fruits = ["Apple", "Mango", "Papaya"];
     echo "Replacing the value";
-    array_splice($colors,0,3,$fruits); //--Incerting the value
+    array_splice($colors, 0, 3, $fruits); //--Incerting the value
     print_r($colors);
     echo "Deleting from the range ";
-    array_splice($colors,2,1);
+    array_splice($colors, 2, 1);
     print_r($colors);
     echo "Deleting the value of ";
-    array_splice($colors,2);
+    array_splice($colors, 2);
     print_r($colors);
+    ?>
 
+    <?php
+    //---array_sorting function on php
+    echo "Array sorting";
+    $name = ["sushant", "Anuj", "sanjay", "Aman"];
+    sort($name); //--ascending sorting
+    print_r($name);
+    rsort($name); //---descending order--
+    print_r($name);
+    $name = ["a" => "sushant", "b" => "Anuj", "d" => "sanjay", "c" => "Aman"];
+    arsort($name); //-- helps to sort the asciosative array-
+    print_r($name);
+    echo "ksort";
+    ksort($name); //-- helps to sort according to key sorting-
+    print_r($name);
+    krsort($name); //-- helps to sort according to key reverse sorting-
+    print_r($name);
 
     ?>
+    <?php
+    $name = ["sushant", "Anuj", "sanjay", "Aman"];
+    echo current($name); //-- display the current value-
+    echo "<br>" . next($name); //-- display the next value
+    echo prev($name); //display the previous value from the pointer
+    echo end($name); //--displaying the last value of the array
+    ?>
+    <?php
+    //--array range function--
+    $fullArray = range(1,12);
+    print_r($fullArray);
+    $fullArray = range(1,12,3);
+    print_r($fullArray);
+    ?>
 </body>
+
 
 </html>
