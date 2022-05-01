@@ -1,6 +1,3 @@
-*{
-    color:firebrick ;
-}
 table {
     border-radius: 20px;
     background-color: black;
@@ -20,9 +17,4 @@ table tr:nth-child(even) {
 table tr:nth-child(odd) {
     background-color: rgb(9, 26, 121);
     color: aliceblue;
-}
-
-h1{
-    color: rgb(126, 29, 29);
-    font-size: 12rem;
 }

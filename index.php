@@ -19,7 +19,7 @@
     $Num = 2345;
     echo $A;
     echo $Num;
-    echo "<h1>" . $A . "</h1>";
+    echo "<h2>" . $A . "</h2>";
 
     //---Sum of two  number---
     $Number1 = 12;
@@ -216,7 +216,7 @@
             "S.N" => 1,
             "NAME" => "Sushant Khadka",
             "ADRESS" => "Balkumari",
-            "PHONE" => 9865758933
+            "PHONE" => 9865758933 
         ],
         [
             "S.N" => 2,
@@ -422,6 +422,9 @@
     echo strlen($SomeWord); //--length of the character in the variable
     echo "<br>" . str_word_count($SomeWord); //--count the number of word
     echo "<br>"."<h1>".substr_count($SomeWord,"in")."</h1>"; //--counting the word
+    ?>
+    <?php
+    echo "I am Back Again";
     ?>
 
 </body>
