@@ -1,0 +1,19 @@
+> Array_interest()
+-- it helps to compare the value int the array and make the new array if their value mathes with each other.
+syntax: 
+           $FinalOne= Array_interest($firstOne, $secondOne);
+
+> Array_interest_key()
+-- it helps to compare the Key int the array and make the new array if their value mathes with each other.
+syntax: 
+           $FinalOne= Array_interest($firstOne, $secondOne);
+
+>array_diff();
+- check the value int the array and make the new array of the remaining array
+syntax:
+        $new = array_diff($firstOne,$secondOne);
+        
+>array_diff_key();
+- check the Key int the array and make the new array of the remaining array
+syntax:
+        $new = array_diff_key($firstOne,$secondOne);

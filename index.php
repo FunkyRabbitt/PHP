@@ -216,7 +216,7 @@
             "S.N" => 1,
             "NAME" => "Sushant Khadka",
             "ADRESS" => "Balkumari",
-            "PHONE" => 9865758933 
+            "PHONE" => 9865758933
         ],
         [
             "S.N" => 2,
@@ -421,10 +421,19 @@
     $SomeWord = "This is the first word written in php";
     echo strlen($SomeWord); //--length of the character in the variable
     echo "<br>" . str_word_count($SomeWord); //--count the number of word
-    echo "<br>"."<h1>".substr_count($SomeWord,"in")."</h1>"; //--counting the word
+    echo "<br>" . "<h1>" . substr_count($SomeWord, "in") . "</h1>"; //--counting the word
     ?>
     <?php
-    echo "I am Back Again";
+    $data = ["Name" => "Sushant khadka", "Class" => "Bachulor first year in Softwarw engeneering"];
+    print_r($data);
+    echo $data['Name'] . "<br>";
+    echo $data['Class'];
+    ?>
+    <?php
+    $data = ["Name" => "Sushant khadka", "Class" => "Bachulor first year in Softwarw engeneering"];
+    $name = ["Name"=>"Sushant khadka", "Anuj", "sanjay", "Aman"];
+    $newArray = array_diff($data,$name);
+    print_r($newArray);
     ?>
 
 </body>
