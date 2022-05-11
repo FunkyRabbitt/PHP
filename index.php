@@ -162,7 +162,8 @@
     echo $date;
     ?>
     <?php
-
+    //--dAY FINDER
+    echo date("l", mktime(0,0,0,2,21,2003));
     ?>
 </body>
 

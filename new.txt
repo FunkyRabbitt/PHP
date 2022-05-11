@@ -5,3 +5,37 @@ A. Hassing algorithms
 B. Message Incoding and decoding algorithms
     1. convert_uuencode() --> incoding Message
     2. convert_uudecode() --> Decode the Message
+
+C. Date and time function
+    DATE(format)
+    A. Day
+        1. d =(01 to 31)
+        2. j = (1 to 31)
+        3. S =(st,nd or th)
+    B. Month
+        1. F = (january)
+        2. m = (01)
+        3. M = (jan)
+        4. n = (1)
+    C. Year
+        1. Y = (2022)
+        2. y = (22)
+    D. Week
+        1. D = (mon)
+        2. l = (monday)
+        3. N = (1)
+        4. W = (1)
+
+    A. Hour
+        1. h = (01 to 12)
+        2. H = (00 to 12)
+        3. g = (1 to 12)
+        4. G = (0 to 23)
+    B. Minutes
+     1. i = (00 to 59)
+    C. Seconds
+        1. s = (00 to 59)
+    D. Meeridian
+     1.a =(am or pm)
+     2. A = (AM or PM)
+
