@@ -23,7 +23,17 @@ PHP was first created by Rasmus Lerdorf in 1995.[7] It is now developed and impr
         <title>Hello World</title>
       </head>
       <body>
-        <?= '<p>Hello World</p>'; ?>
+        <?php
+    //-- array slicing
+    // -- take the value and print in range-
+    $Data = [1, "Sushant Khadka", "Balkumari", 9865758933];
+    $newArray = array_slice($Data, 1, 2); //--positive range
+    $WultaValue = array_slice($Data, -2, 2);  //--negative range
+    $KhatamValue = array_slice($Data, -2, 2, true); //---printing the actual indexing pf the element of the array
+    print_r($newArray);
+    print_r($WultaValue);
+    print_r($KhatamValue);
+    ?>
       </body>
     </html>
 
