@@ -11,7 +11,7 @@ PHP was first created by Rasmus Lerdorf in 1995.[7] It is now developed and impr
 
 
 ## An example Hello World program:
-    <pre>
+
     <?php
     echo "Hello, World!";
     ?>
@@ -26,4 +26,4 @@ PHP was first created by Rasmus Lerdorf in 1995.[7] It is now developed and impr
         <?= '<p>Hello World</p>'; ?>
       </body>
     </html>
-</pre>
+
