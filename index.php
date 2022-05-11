@@ -60,6 +60,110 @@
     $snew = stripslashes($new); //--Removing all the slacess from the word
     echo "<br>" . $snew;
     ?>
+    <?php
+    //--Save from Sql injection
+    //--Htmlentities helps to convert the html tag into its corresponding value
+    $link = '<a href="https://www.instagram.com/">Click here</a>';
+    $newlink = htmlentities($link); //--convert any kind of script into the plain text
+    echo $newlink;
+    $secondlink = html_entity_decode($newlink); // Decoding the word
+    echo $secondlink;
+    ?>
+    <?php
+    //-->Password Hassing algorithms
+    // ------------md5 hassing algorithms
+    // --> it gives only 32 cgaracter after hasing
+    $str1 = " ksdjksdjksjdksjdjskdjksjdkj";
+    echo "<br>";
+    $newstr = md5($str1); //--incodee into the hexa value by md5
+    echo "<br>" . $newstr;
+    $newstr = md5($str1, true); //--incodee into the Binary value value
+    echo "<br>" . $newstr;
+    $newstr = sha1($str1); //--incodee into the hexa value by sha1
+    echo "<br>" . $newstr;
+    $newstr = sha1($str1, true); //--incodee into the Binary value value
+    echo "<br>" . $newstr;
+    ?>
+    <?php
+    $meroMessage = "Instagram[a] is an American photo and video sharing social networking service founded in 2010 by Kevin Systrom and Mike Krieger, and later acquired by Facebook Inc.. The app allows users to upload media that can be edited with filters and organized by hashtags and geographical tagging. Posts can be shared publicly or with preapproved followers. Users can browse other users' content by tag and location, view trending content, like photos, and follow other users to add their content to a personal feed.[10]";
+    echo "<br><br>" . $meroMessage;
+    $AffterIncode = convert_uuencode($meroMessage); //--> Incode all the message
+    echo "<br><br>" . $AffterIncode;
+    echo "<br><br>" . convert_uudecode($AffterIncode); //--> Decode all the message
+    ?>
+    <?php
+    $name = "hah";
+    echo bin2hex($name);
+    echo hex2bin(bin2hex($name));
+    ?>
+    <?php
+    $name = 89;
+    echo chr($name); //---convert ascii value into character
+    echo ord($name); // convert character into ascii vakue
+    ?>
+    <?php
+    //---word wrap
+    $meroMessage = "Instagram[a] is an American photo and video sharing social networking service founded in 2010 by Kevin Systrom and Mike Krieger, and later acquired by Facebook Inc.. The app allows users to upload media that can be edited with filters and organized by hashtags and geographical tagging. Posts can be shared publicly or with preapproved followers. Users can browse other users' content by tag and location, view trending content, like photos, and follow other users to add their content to a personal feed.<br></br>";
+    // echo wordwrap($meroMessage,4,"<br>");//--breeak when space comes
+    echo wordwrap($meroMessage, 4, "<br>", true); //--break after 4 character
+    ?>
+    <?php
+    //---Working with math function
+    /*
+    1. abs()-- Gives always the positive value(-5.5)-->5.5
+    2. floor()-- Gives the floor value(4.3,4.5)--> 4
+    3. ceil()-- Gives the upper value(4.6,4,2)--> 5
+    4. round()--> Gives the upper value(4.2,4.7)--> 4 and 5
+    */
+    ?>
+    <?php
+    //--creating the random number 
+    echo rand(1, 34);
+    echo "<br>";
+    echo mt_rand(1, 34);
+    ?>
+    <?php
+    //date and time function
+    /*
+    DATE(format)
+    A. Day
+        1. d =(01 to 31)
+        2. j = (1 to 31)
+        3. S =(st,nd or th)
+    B. Month
+        1. F = (january)
+        2. m = (01)
+        3. M = (jan)
+        4. n = (1)
+    C. Year
+        1. Y = (2022)
+        2. y = (22)
+    D. Week
+        1. D = (mon)
+        2. l = (monday)
+        3. N = (1)
+        4. W = (1)
+    */
+    /*
+    A. Hour
+        1. h = (01 to 12)
+        2. H = (00 to 12)
+        3. g = (1 to 12)
+        4. G = (0 to 23)
+    B. Minutes
+     1. i = (00 to 59)
+    C. Seconds
+        1. s = (00 to 59)
+    D. Meeridian
+     1.a =(am or pm)
+     2. A = (AM or PM)
+    */
+    $date = date("j") . date("S") . " " . date("M") . " " . date("Y");
+    echo $date;
+    ?>
+    <?php
+
+    ?>
 </body>
 
 </html>

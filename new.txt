@@ -1,0 +1,7 @@
+A. Hassing algorithms
+    1. md5
+    2. sha1
+
+B. Message Incoding and decoding algorithms
+    1. convert_uuencode() --> incoding Message
+    2. convert_uudecode() --> Decode the Message
