@@ -11,18 +11,19 @@ PHP was first created by Rasmus Lerdorf in 1995.[7] It is now developed and impr
 
 
 ## An example Hello World program:
+    <pre>
+    <?php
+    echo "Hello, World!";
+    ?>
+    It is common to put PHP code inside a HTML document, for example:
 
-  <?php
-  echo "Hello, World!";
-  ?>
-  It is common to put PHP code inside a HTML document, for example:
-
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <title>Hello World</title>
-    </head>
-    <body>
-      <?= '<p>Hello World</p>'; ?>
-    </body>
-  </html>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Hello World</title>
+      </head>
+      <body>
+        <?= '<p>Hello World</p>'; ?>
+      </body>
+    </html>
+</pre>
