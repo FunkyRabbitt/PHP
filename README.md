@@ -10,7 +10,7 @@ Its structure was influenced by many languages like C, Perl, Java, C++, and even
 PHP was first created by Rasmus Lerdorf in 1995.[7] It is now developed and improved by a large team of people. Its name at first stood for Personal Home Page, but it was later changed to PHP: Hypertext Preprocessor; using its old acronym in the new name.
 
 
-##An example Hello World program:
+## An example Hello World program:
 
   <?php
   echo "Hello, World!";
