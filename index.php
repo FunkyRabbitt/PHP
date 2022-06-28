@@ -148,7 +148,7 @@
     A. Hour
         1. h = (01 to 12)
         2. H = (00 to 12)
-        3. g = (1 to 12)
+        3. g = (1 to 1s2)
         4. G = (0 to 23)
     B. Minutes
      1. i = (00 to 59)
@@ -164,6 +164,118 @@
     <?php
     //--dAY FINDER
     echo date("l", mktime(0,0,0,2,21,2003));
+    ?>
+
+<?php
+    //--dAY FINDER
+    echo "hellow";
+    ?>
+
+<?php
+    //--dAY FINDER
+    echo "hellow";
+    ?>
+<?php
+$data = [
+        [1, "Sushant Khadka", "Balkumari", 9865758933],
+        [2, "Sushil Kathayat", "Patan", 9821644926],
+        [3, "Sabin Chaulagain", "Boudha", 9725648914]
+    ];
+    echo "<br>";
+    echo "<table border='1px' cellspacing=0px' cellpadding='13px'>";
+    echo "<tr>
+    <th>S.N</th>
+    <th>NAME</th>
+    <th>ADRESS</th>
+    <th>PHONE</th>
+    </tr>";
+    for($i = 0; $i <=2; $i++){
+        echo "<tr>";
+        for($j = 0; $j <=3; $j++){
+            echo "<td>".$data[$i][$j];
+        }
+        echo "</tr>";
+    }
+    echo "</table>"
+?>
+<?php
+$data = [
+        [
+            "S.N" => 1,
+            "NAME" => "Sushant Khadka",
+            "ADRESS" => "Balkumari",
+            "PHONE" => 9865758933
+        ],
+        [
+            "S.N" => 2,
+            "NAME" => "Sushil Kathayat",
+            "ADRESS" => "Patan",
+            "PHONE" => 9821644926
+        ],
+        [
+            "S.N" => 3,
+            "NAME" => "Sabin Chaulagain",
+            "ADRESS" => "Boudha",
+            "PHONE" => 9725648914
+        ],
+        [
+            "S.N" => 4,
+            "NAME" => "Sabin Chaulagain",
+            "ADRESS" => "Boudha",
+            "PHONE" => 9725648914
+        ]
+    ];
+    echo "<table border='1px' cellpadding='16px'cellspacing='0px'>";
+    echo "<tr>
+<th>S.N</th>
+<th>Full Name</th>
+<th>Adress</th>
+<th>Phone Number</th>";
+    foreach ($data as list("S.N" => $a, "NAME" => $b, "ADRESS" => $c, "PHONE" => $d)) {
+        echo "<tr>";
+        echo "<td>$a</td> <td>$b</td> <td>$c</td> <td>$d</td>" . "<br>";
+        echo "</tr>";
+    }
+    echo "</table>";
+    ?>
+        <?php
+    //---Count() and sozeof() function --
+    $data = [
+        [
+            "S.N" => 1,
+            "NAME" => "Sushant Khadka",
+            "ADRESS" => "Balkumari",
+            "PHONE" => 9865758933
+        ],
+        [
+            "S.N" => 2,
+            "NAME" => "Sushil Kathayat",
+            "ADRESS" => "Patan",
+            "PHONE" => 9821644926
+        ],
+        [
+            "S.N" => 3,
+            "NAME" => "Sabin Chaulagain",
+            "ADRESS" => "Boudha", "PHONE" => 9725648914
+        ],
+        [
+            "S.N" => 4,
+            "NAME" => "Sabin Chaulagain",
+            "ADRESS" => "Boudha",
+            "PHONE" => 9725648914
+        ],
+        [
+            "S.N" => 4,
+            "NAME" => "Sabin Chaulagain",
+            "ADRESS" => "Boudha",
+            "PHONE" => 9725648914
+        ]
+    ];
+    echo "Total size of the Array : ";
+    echo count($data);
+    echo "<br>" . "Total Size of the element of the array : ";
+    echo sizeof($data, 1);
+
     ?>
 </body>
 
