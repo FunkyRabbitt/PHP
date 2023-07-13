@@ -1,6 +1,6 @@
 # PHP
 
-PHP (PHP: Hypertext Preprocessor) is a scripting language that helps people make web pages more interactive by allowing them to do more intelligent, complex things. PHP code is run on the web server.
+PHP (PHP: Hypertext Preprocessor) is a scripting language that helps people make web pages more interactive by allowing them to do more intelligent, complex things. PHP code is run on the web servers.
 
 A website programmed with PHP can have pages that are password protected. A website with no programming cannot do this without other complex things. Standard PHP file extensions are: .php .php3 or .phtml, but a web server can be set up to use any extension.
 
